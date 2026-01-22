@@ -46,7 +46,7 @@ const FinalPromise = () => {
           transition={{ delay: 4, duration: 1.2 }}
           className="mt-12 text-xl md:text-2xl font-bold text-rose-700"
         >
-          — Yours, Liton
+          — Yours, Litan
         </motion.p>
 
         <motion.p

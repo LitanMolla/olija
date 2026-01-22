@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+body{
+  font-family: "Exo 2", sans-serif;
+}
+@keyframes float {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: float 10s linear infinite;
+}
+
+.btn{
+  @apply px-8 py-3 rounded-full font-semibold
+bg-gradient-to-r from-pink-500 to-red-500
+hover:from-red-500 hover:to-pink-500
+shadow-lg hover:scale-110 transition-all duration-300 text-rose-200
+}
+button,a {
+  cursor: pointer;
+}
+
+.heading {
+  @apply text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent
+}
